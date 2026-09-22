@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaaz Saleem</title>
+<meta name="description" content="Shaaz Saleem — Computer Science & Engineering student at UC Merced. Computer vision, autonomous systems, and full-stack software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBFAF8;
+    --text:#1C1B19;
+    --muted:#6B6862;
+    --line:#E4E1DA;
+    --accent:#1A5E48;
+    --maxw:660px;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Inter",system-ui,-apple-system,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:#D6EAE0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+
+  header{padding:96px 0 20px}
+  h1{
+    font-family:"Newsreader",Georgia,serif;
+    font-weight:500;
+    font-size:2.6rem;
+    line-height:1.1;
+    letter-spacing:-.01em;
+    margin:0 0 14px;
+  }
+  .intro{font-size:1.12rem;color:var(--muted);margin:0 0 22px;max-width:56ch}
+  .intro b{color:var(--text);font-weight:500}
+  .links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.98rem}
+
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  section:first-of-type{margin-top:56px}
+  h2{
+    font-family:"Inter",sans-serif;
+    font-size:.82rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 28px;
+  }
+
+  p{margin:0 0 16px}
+  .about p{color:var(--text);max-width:60ch}
+  .about p:last-child{margin-bottom:0}
+
+  .entry{margin:0 0 30px}
+  .entry:last-child{margin-bottom:0}
+  .entry-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .entry-title{font-family:"Newsreader",Georgia,serif;font-size:1.28rem;font-weight:500;line-height:1.25}
+  .entry-when{font-size:.9rem;color:var(--muted);white-space:nowrap}
+  .entry-org{color:var(--accent);font-size:.96rem;margin:2px 0 10px}
+  .entry-desc{color:var(--muted);max-width:62ch;margin:0 0 8px}
+  .entry-desc:last-child{margin-bottom:0}
+  .meta{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+  .meta a{margin-right:16px}
+  .award{color:var(--accent);font-weight:500}
+
+  .skills-body{color:var(--muted);max-width:62ch}
+  .skills-body p{margin:0 0 12px}
+  .skills-body p:last-child{margin-bottom:0}
+  .skills-body b{color:var(--text);font-weight:600}
+
+  footer{padding:40px 0 80px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+  footer .links{margin-bottom:20px}
+
+  @media (max-width:520px){
+    header{padding:64px 0 10px}
+    h1{font-size:2.1rem}
+    .entry-when{white-space:normal}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Shaaz Saleem</h1>
+      <p class="intro">Computer Science &amp; Engineering student at UC&nbsp;Merced. I build software that <b>senses the real world and acts on it</b> — computer vision, autonomous systems, and full-stack.</p>
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:shaaz.m.saleem@gmail.com">Email</a>
+        <a href="https://github.com/shaazsaleem" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/shaazsaleem" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>I gravitate toward problems where software meets the physical world. Recently that's meant motion-forecasting models for Level&nbsp;4 autonomous driving on the Waymo Open Motion Dataset, computer-vision systems that detect and track objects in real time, and pre-charge firmware for a nationally competing EV race car handling voltages over 600V.</p>
+      <p>I like owning things end to end. As a software engineering intern I ship the whole stack, and I care most about work that reaches real users — a 1000%+ jump in civic engagement, or a hackathon tool people keep testing after the weekend ends. Expected to graduate May 2027 with a 3.9 GPA.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Software Engineering Intern</span>
+          <span class="entry-when">Feb 2026 — Present</span>
+        </div>
+        <p class="entry-org">UC Merced, Office of Sustainability</p>
+        <p class="entry-desc">Own end-to-end technical development for the office: build and ship the department website, automate content workflows, and iterate from staff feedback. Shipped outreach tooling that grew civic engagement by over 1000%, and am building a Python crop-yield forecasting model from years of internal records.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Autonomous Driving Research</span>
+          <span class="entry-when">Feb 2026 — May 2026</span>
+        </div>
+        <p class="entry-org">UC Merced, under Dr. Ayush Pandey</p>
+        <p class="entry-desc">Built a predictive motion-forecasting model for Level 4 autonomous driving on the Waymo Open Motion Dataset with PyTorch &amp; TensorFlow, and designed training and evaluation pipelines to benchmark prediction accuracy against ground-truth trajectories.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Embedded Firmware, EV Race Car</span>
+          <span class="entry-when">Aug 2025 — Present</span>
+        </div>
+        <p class="entry-org">Society of Automotive Engineers, UC Merced</p>
+        <p class="entry-desc">Lead pre-charge/discharge embedded firmware for the battery system of a nationally competing EV race car, writing safety-critical software to manage voltages exceeding 600V across a multidisciplinary team.</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">SF311 Live Triage</span>
+          <span class="entry-when">2026</span>
+        </div>
+        <p class="entry-org">Python · FastAPI · LLM pipeline · React</p>
+        <p class="entry-desc"><span class="award">2nd place, DigitalOcean Hackathon.</span> An AI operations platform that ingests unstructured 311 complaints and turns them into categorized, safety-ranked incidents. A FastAPI + LLM pipeline live-labels ~400 real SF cases by urgency, escalates duplicate reports, and places them on a live map with a ranked queue that recommends the nearest crew.</p>
+        <p class="meta"><a href="https://github.com/shaazsaleem/SF311" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">MotionCast</span>
+          <span class="entry-when">2026</span>
+        </div>
+        <p class="entry-org">Python · YOLOv11 · Meta SAM 3.1 · OpenCV</p>
+        <p class="entry-desc"><span class="award">AI Hackathon at Berkeley.</span> A computer-vision pipeline that detects, tracks, and re-identifies every player across sports from a single video feed. Pairs a YOLOv11 detector with Meta's SAM 3.1 for segmentation, projects positions onto a 2D tactical minimap via homography, and was benchmarked against SoccerTrack v2 using HOTA.</p>
+        <p class="meta"><a href="https://github.com/wheredawoodat949/AI-Hackathon" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">ParkVis</span>
+          <span class="entry-when">2026 — Present</span>
+        </div>
+        <p class="entry-org">Python · YOLOv11 · OpenCV · Edge hardware</p>
+        <p class="entry-desc">Co-leading an end-to-end system, in partnership with UC Merced, that uses cameras and YOLOv11 to detect real-time parking-spot occupancy across campus lots on low-cost edge hardware — targeting a live availability map to cut the time students spend hunting for parking.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Personal Vulnerability Checker</span>
+          <span class="entry-when">2026</span>
+        </div>
+        <p class="entry-org">Python · FastAPI · React · MongoDB · Docker</p>
+        <p class="entry-desc">A full-stack security tool that cross-references user input against 6+ threat-intelligence APIs to flag leaked passwords, exposed emails, and malicious IPs and URLs. Concurrent async lookups cut scan latency from ~40s to under 5s; Gemini-powered summaries add text-to-speech for accessibility.</p>
+        <p class="meta"><a href="https://github.com/HackMerced-Team-2026/HackMerced-Privacy-Checker" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Travel Planner &amp; Library Management System</span>
+          <span class="entry-when">Java</span>
+        </div>
+        <p class="entry-org">Data structures &amp; algorithms coursework</p>
+        <p class="entry-desc">Two console applications in Java: a graph-based trip planner using Dijkstra's shortest-path algorithm, and a library system built on a custom hash table for O(1) average-case lookups.</p>
+        <p class="meta"><a href="https://github.com/shaazsaleem/Travel-Planner" target="_blank" rel="noopener">Travel Planner</a><a href="https://github.com/shaazsaleem/Library-Management-System" target="_blank" rel="noopener">Library System</a></p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-body">
+        <p><b>Languages</b> — Python, C++, Java, JavaScript, SQL, HTML/CSS</p>
+        <p><b>Web &amp; Infra</b> — React, FastAPI, Node.js, REST APIs, MongoDB, Postgres, Docker, Git, AWS, DigitalOcean</p>
+        <p><b>ML &amp; AI</b> — PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, YOLOv11, Meta SAM 3.1, OpenCV, Gemini API</p>
+        <p><b>Concepts</b> — Data Structures &amp; Algorithms, Distributed Systems, Machine Learning, OOP, Concurrency, Embedded Systems</p>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:shaaz.m.saleem@gmail.com">Email</a>
+        <a href="https://github.com/shaazsaleem" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/shaazsaleem" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      © <span id="yr"></span> Shaaz Saleem
+    </footer>
+
+  </div>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
