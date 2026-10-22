@@ -79,6 +79,12 @@
   .meta a{margin-right:16px}
   .award{color:var(--accent);font-weight:500}
 
+  .photo-link{display:block;margin:14px 0 4px;max-width:62ch;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;color:var(--text)}
+  .photo-link:hover{text-decoration:none;border-color:var(--accent)}
+  .photo-link img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .photo-link span{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;font-size:.9rem;color:var(--muted)}
+  .photo-link span b{color:var(--accent);font-weight:500}
+
   .skills-body{color:var(--muted);max-width:62ch}
   .skills-body p{margin:0 0 12px}
   .skills-body p:last-child{margin-bottom:0}
@@ -111,7 +117,7 @@
     <section class="about">
       <h2>About</h2>
       <p>I gravitate toward problems where software meets the physical world. Recently that's meant motion-forecasting models for Level&nbsp;4 autonomous driving on the Waymo Open Motion Dataset, computer-vision systems that detect and track objects in real time, and pre-charge firmware for a nationally competing EV race car handling voltages over 600V.</p>
-      <p>I like owning things end to end. As a software engineering intern, I ship the whole stack, and I care most about work that reaches real users, whether that's a 1000%+ jump in civic engagement or a hackathon tool people keep testing after the weekend ends. Expected to graduate May 2027 with a 3.9 GPA.</p>
+      <p>I like owning things end to end. As a software engineering intern, I ship the whole stack, and I care most about work that reaches real users, whether that's growing an office's contact list from 81 to 868 or a hackathon tool people keep testing after the weekend ends. Expected to graduate May 2027 with a 3.9 GPA.</p>
     </section>
 
     <section>
@@ -123,7 +129,20 @@
           <span class="entry-when">Feb 2026 - Present</span>
         </div>
         <p class="entry-org">UC Merced, Office of Sustainability</p>
-        <p class="entry-desc">Own end-to-end technical development for the office: build and ship the department website, automate content workflows, and iterate from staff feedback. Shipped outreach tooling that grew civic engagement by over 1000%, and am building a Python crop-yield forecasting model from years of internal records.</p>
+        <p class="entry-desc">Own end-to-end technical development for the office: build and ship the department website, automate content workflows, and iterate from staff feedback. Shipped outreach tooling that grew the office's contact list from 81 to 868, and am building Excel dashboards that campus sustainability teams use to track their KPIs.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">SAE &amp; GM CivicProgress Challenge</span>
+          <span class="entry-when">Sep 2026 - Present</span>
+        </div>
+        <p class="entry-org">Team Lead, Research &amp; Development Club, advised by Dr. Ross Greer</p>
+        <p class="entry-desc">Part of UC Merced's entry in a competition from SAE International and General Motors to make autonomous vehicles accessible to riders who are often left out, starting with GM's Origin. My team is building a computer-vision model that classifies a wheelchair's type from images, so the vehicle can choose the right securement for each rider and chair.</p>
+        <a class="photo-link" href="https://mi3-lab.github.io/civic-progress" target="_blank" rel="noopener">
+          <img src="images/IMG_8955.jpeg" alt="Shaaz and a member of UC Merced's CivicProgress team seated inside the test vehicle" loading="lazy" width="1400" height="1050">
+          <span>UC Merced CivicProgress project page <b>Visit &#8599;</b></span>
+        </a>
       </div>
 
       <div class="entry">
@@ -132,7 +151,7 @@
           <span class="entry-when">Feb 2026 - May 2026</span>
         </div>
         <p class="entry-org">UC Merced, under Dr. Ayush Pandey</p>
-        <p class="entry-desc">Researched on building a predictive motion-forecasting model for Level 4 autonomous driving on the Waymo Open Motion Dataset with PyTorch &amp; TensorFlow, and designed training and evaluation pipelines to benchmark prediction accuracy against ground-truth trajectories.</p>
+        <p class="entry-desc">Built a predictive motion-forecasting model for Level 4 autonomous driving on the Waymo Open Motion Dataset with PyTorch &amp; TensorFlow, and designed training and evaluation pipelines to benchmark prediction accuracy against ground-truth trajectories.</p>
       </div>
 
       <div class="entry">
@@ -141,7 +160,7 @@
           <span class="entry-when">Aug 2025 - Present</span>
         </div>
         <p class="entry-org">Society of Automotive Engineers, UC Merced</p>
-        <p class="entry-desc">Lead pre-charge/discharge embedded firmware for the battery system of a nationally competing EV race car, writing safety-critical software to manage voltages exceeding 600V across a multidisciplinary team.</p>
+        <p class="entry-desc">Lead pre-charge/discharge embedded firmware in C++ on an STM32 for the 600V battery system of a nationally competing EV race car, including fault handling that shuts down the pack only on real faults.</p>
       </div>
 
     </section>
@@ -151,11 +170,20 @@
 
       <div class="entry">
         <div class="entry-top">
+          <span class="entry-title">CatPark</span>
+          <span class="entry-when">Aug 2026 - Present</span>
+        </div>
+        <p class="entry-org">Python · YOLOv11 · OpenCV · Edge hardware · Advised by Dr. Ross Greer</p>
+        <p class="entry-desc">Project lead on a team of 6 (4 software, 2 hardware) building an end-to-end system, in partnership with UC Merced, that uses cameras and YOLOv11 to detect parking-spot occupancy across 5 campus lots and 2,177 spots, running at 30 FPS with 89% detection accuracy on low-cost edge hardware, for a live availability map that cuts the time students spend hunting for parking. I presented our design to the UC Merced parking department and security team, and we became the first undergraduate group granted access to university systems through campus SSO. We built the pipeline to keep as little sensitive data as possible.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
           <span class="entry-title">SF311 Live Triage</span>
           <span class="entry-when">Jul 2026</span>
         </div>
         <p class="entry-org">Python · FastAPI · LLM pipeline · React</p>
-        <p class="entry-desc"><span class="award">2nd place, DigitalOcean Hackathon.</span> An AI operations platform that ingests unstructured 311 complaints and turns them into categorized, safety-ranked incidents. A FastAPI + LLM pipeline live-labels ~400 real SF cases by urgency, escalates duplicate reports, and places them on a live map with a ranked queue that recommends the nearest crew.</p>
+        <p class="entry-desc"><span class="award">2nd place, DigitalOcean Hackathon.</span> An AI operations platform that ingests unstructured 311 complaints and turns them into categorized, safety-ranked incidents. A FastAPI + LLM pipeline live-labels real SF cases into 5 categories by urgency, escalates duplicate reports, and places them on a live map with a ranked queue that recommends the nearest crew.</p>
         <p class="meta"><a href="https://github.com/shaazsaleem/SF311" target="_blank" rel="noopener">GitHub</a></p>
       </div>
 
@@ -171,20 +199,11 @@
 
       <div class="entry">
         <div class="entry-top">
-          <span class="entry-title">ParkVis</span>
-          <span class="entry-when">Aug 2026 - Present</span>
-        </div>
-        <p class="entry-org">Python · YOLOv11 · OpenCV · Edge hardware</p>
-        <p class="entry-desc">Project lead on a team of 6 (4 software, 2 hardware) building an end-to-end system, in partnership with UC Merced, that uses cameras and YOLOv11 to detect real-time parking-spot occupancy across campus lots on low-cost edge hardware, targeting a live availability map to cut the time students spend hunting for parking. I presented our design to the UC Merced parking department and security team, and we became the first undergraduate group granted campus SSO access. We built the pipeline to keep as little sensitive data as possible.</p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-top">
           <span class="entry-title">Personal Vulnerability Checker</span>
           <span class="entry-when">Mar 2026</span>
         </div>
         <p class="entry-org">Python · FastAPI · React · MongoDB · Docker</p>
-        <p class="entry-desc">A full-stack security tool that cross-references user input against 6+ threat-intelligence APIs (HaveIBeenPwned, Google Safe Browsing v4, AbuseIPDB, IntelligenceX, XposedOrNot) to flag leaked passwords, exposed emails, and malicious IPs and URLs. Concurrent async lookups cut scan latency from ~40s to under 5s; Gemini-powered summaries add text-to-speech for accessibility.</p>
+        <p class="entry-desc">A full-stack security tool that cross-references user input against 5 threat-intelligence APIs (HaveIBeenPwned, Google Safe Browsing v4, AbuseIPDB, IntelligenceX, XposedOrNot) to flag leaked passwords, exposed emails, and malicious IPs and URLs. Concurrent async lookups cut scan latency from ~40s to under 5s; Gemini-powered summaries add text-to-speech for accessibility.</p>
         <p class="meta"><a href="https://github.com/HackMerced-Team-2026/HackMerced-Privacy-Checker" target="_blank" rel="noopener">GitHub</a></p>
       </div>
 
@@ -204,9 +223,10 @@
       <h2>Skills</h2>
       <div class="skills-body">
         <p><b>Languages</b>: Python, TypeScript, JavaScript, Java, C++, SQL, HTML/CSS</p>
-        <p><b>Web &amp; Infra</b>: React, FastAPI, Node.js, REST APIs, MongoDB, Postgres, Docker, Git, AWS, DigitalOcean</p>
-        <p><b>ML &amp; AI</b>: PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, YOLOv11, Meta SAM 3.1, OpenCV, Gemini API</p>
-        <p><b>Concepts</b>: Data Structures &amp; Algorithms, Distributed Systems, Machine Learning, OOP, Concurrency, Embedded Systems</p>
+        <p><b>Web &amp; Infra</b>: React, FastAPI, Node.js, REST APIs, PostgreSQL, MongoDB, Docker, Git, AWS, DigitalOcean, Excel</p>
+        <p><b>ML &amp; AI</b>: PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, YOLOv11, Meta SAM 3.1, OpenCV, Gemini API, Claude Code, Codex</p>
+        <p><b>Concepts</b>: Data Structures &amp; Algorithms, API Design, Machine Learning, OOP, Concurrency, Embedded Systems</p>
+        <p><b>Certifications</b>: <a href="https://www.credential.net/562c9296-f0a9-45de-93ed-ef8a5f4828a5" target="_blank" rel="noopener">Querying Data (SQL)</a>, Global Career Accelerator</p>
       </div>
     </section>
 
